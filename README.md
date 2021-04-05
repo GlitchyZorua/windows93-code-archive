@@ -1,5 +1,9 @@
 # windows93-code-archive
-A place where you can find some good stuff i guess
+A place where you can find some good stuff i guess.
+
+
+It's basically my collection of apps, and shit from w93
+
 
 # Licensing
 
