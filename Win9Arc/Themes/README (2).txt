@@ -1,1 +1,0 @@
-A collection of CSS themes sent in the Windows 93 Discord. Copy the css file to /a/boot to install.

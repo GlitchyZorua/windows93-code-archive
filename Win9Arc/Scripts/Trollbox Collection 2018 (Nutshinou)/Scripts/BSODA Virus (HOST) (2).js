@@ -1,1 +1,0 @@
-function s(){};$alert({msg:'I am BSODA!',title:'BSODA',closable:false,onready(l,i){function a(I){l.style.transform='scale('+I+')'};var t = 0.75;setInterval(function(){t+=0.001;a(t);},10)},center:false,baseClass:'virus ui_alert',btnOk:false})
