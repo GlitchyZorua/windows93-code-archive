@@ -1,0 +1,138 @@
+:root {
+	--main: #eeeef7;
+	--window: #eeeef7a7;
+	
+	--accent: #3da;
+	--accentdark: #1b8;
+	--accentbright: #4eb;
+	
+	--head: #298;
+	--headdark: #065;
+	
+	--docked: #3da;
+	--dockedactive: #5fc;
+	--dockedpressed: #1b8;
+	--dockedminimized: #074;
+	
+	--textdark: #444;
+	--textbright: #eee;
+}
+
+.ui_window {
+	border-radius: 10px 10px 5px 5px;
+	padding: 3px;
+  padding-bottom: 0;
+	background: var(--window);
+	box-shadow: none;
+	border: none;
+	filter: brightness(0.7);
+	backdrop-filter: blur(10px);
+}
+
+.ui_window--active {
+	filter: brightness(1)
+}
+
+.ui_window__head, .ui_window--active .ui_window__head {
+	background: none;
+	color: var(--textdark);
+	padding: 2px 2px 2px 4px;
+	transform: translateY(2px);
+	text-align: center;
+}
+
+.ui_window__head__icon {
+	transform: translateY(-2px);
+}
+
+.ui_window__head > button, #s42_taskbar button {
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: var(--textdark);
+}
+
+.ui_window__head > button:hover {
+	color: var(--head);
+}
+
+.ui_window__head > button:active {
+	border: none !important;
+	box-shadow: none !important;
+	color: var(--headdark)
+}
+
+#s42_taskbar {
+	background: var(--main);
+}
+
+#s42_taskbar button.ui_window_docked {
+	background-color: var(--docked);
+	border-radius: 15px 0;
+	padding: 0px 8px
+}
+
+#s42_taskbar button.ui_window_docked.pressed {
+	background: var(--dockedactive)
+}
+
+#s42_taskbar button.ui_window_docked--minimized {
+	background: var(--dockedminimized) !important;
+	text-shadow: none !important;
+}
+
+#s42_taskbar button.ui_window_docked--minimized .ui_window_docked__text {
+	color: var(--textbright) !important;
+}
+
+#s42_taskbar button.ui_window_docked:active {
+	background: var(--accentdark) !important;
+}
+
+.skin_inset, .skin_inset_deep, .skin_outset, .skin_outset_deep {
+	border: none;
+	background: transparent;
+	box-shadow: none;
+}
+
+.ui_window__body {
+	background: var(--main);
+	margin: 0 -3px;
+  	border-radius: 0 0 5px 5px;
+}
+
+.ui_window__menu .ui_menu__item {
+	color: var(--text);
+}
+
+.ui_explorer__nav button, .ui_explorer__nav input {
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	color: var(--text)
+}
+
+.ui_explorer__selected_file {
+	border: none !important;
+	box-shadow: none !important;
+	transform: translateY(1px)
+}
+
+.ui_window .ui_explorer_container {
+	padding: 10px 0;
+}
+
+.ui_terminal {
+	background-color: #337
+}
+
+#s42_background {
+	background: url("https://cdn.discordapp.com/attachments/533315344593584128/734652057780224060/image0.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ui_window .ui_menu__submenu.ui_menu--open {
+	top: 0;
+	left: 0;
+}

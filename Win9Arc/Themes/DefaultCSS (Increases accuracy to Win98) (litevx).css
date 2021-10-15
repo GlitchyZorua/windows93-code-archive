@@ -1,0 +1,429 @@
+/* DefaultCSS rc2 (unreleased) */
+/* Made by litevx, with code from ziad87 and dakedres */
+/* Any unwanted changes can be commented out */ 
+
+/* -- Slightly desaturated gradient to decrease eye strain (major problem with windows93 on a lot of displays) -- */
+#s42_background {
+/*    background: linear-gradient(135deg,#d017d0 0,#01ecec 100%);*/
+  background: linear-gradient(135deg,#d017d0 0,#01ecec 100%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center; 
+
+}
+cool{
+    color: black !important;
+}
+.ui_window--active .ui_window__head {
+  background: linear-gradient(135deg,#d006d0 0,#0aa 100%);
+}
+
+/* -- Remove dragging cursor from Windows title bar hover, and set proper cursor during dragging-- */
+.ui_window__head > .ui_window--draggable {
+  cursor: inherit !important;
+}
+
+.ui_is_dragging * {
+  cursor: url(/c/sys/cursors/drag.cur),move;
+}
+
+
+/* -- Better start menu and taskbar -- */
+#s42_feed > img {
+  content: url("/c/sys/skins/w93/16/wamp_online.png");
+}
+
+#s42_start {
+  outline: none !important;
+}
+
+#s42_dock {
+  margin-left: 5px !important;
+  margin-right: 3px !important;
+  border-left: 1px solid #fff !important;
+  border-right: 1px solid #808080 !important;
+  box-shadow: -1px 0px 0px #808080, 1px 0px 0px #fff !important;
+}
+
+#s42_taskbar {
+  border-top-color: #dfdfdf !important;
+  background-color: #bfbfbf !important;
+  box-shadow: inset 1px 1px #fff, 1px 0 #000, 0 1px #000, 1px 1px #000 !important;
+}
+
+#ui_menu_4 > ul {
+  margin-bottom: 3px !important;
+  padding: 1px !important;
+  padding-bottom: 2px !important;
+        /* --- /!\ FILEHOST WARNING: USES DISCORD CDN, IF ADDED TO OFFICIAL WIN93, PUT IMAGE ON SERVER INSTEAD /!\ --- */
+  background: url("https://cdn.discordapp.com/attachments/744570181342330951/748999911995080804/Frame_4.png") no-repeat 1% center;
+  background-color: silver !important;
+}
+
+.ui_menu__item--focus {
+  background: #0d80c8 !important;
+}
+
+#ui_menu_4 > ul > li:not(.ui_menu__separator) {
+  min-height: 34px !important;
+}
+
+#ui_menu_4 > ul > .ui_menu__item--opener:after {
+  padding-top: 6px !important;
+  font-size: 10px !important;
+}
+
+#ui_menu_4 > ul > li {
+  margin-left: 25px !important;
+}
+
+#ui_menu_4 > ul > li:nth-child(9) {
+  display: none !important;
+}
+
+#ui_menu_4 > ul > li > .ui_menu__item__ico > img {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+#ui_menu_4 > ul > #ui_menu__item_24  > .ui_menu__item__ico > img {
+  width: 29px !important;
+  height: 29px !important;
+  padding-top: 2px !important;
+  padding-left: 2px !important;
+}
+
+#ui_menu_4 > ul > li >.ui_menu__item__text {
+  display: flex;
+  align-items: center;
+  margin-left: 16px !important;
+}
+
+/* -- Position alert text to the left side, matching Windows 98 -- */
+.ui_alert__text {
+  text-align: left;
+  margin-left: 55px !important;
+}
+
+.ui_alert__img {
+  margin-left: 7px !important;
+}
+
+.ui_window__body:not(.ui_terminal) {
+  overflow: hidden !important;
+}
+
+/* -- Adds proper black outline to focused buttons, matching Windows 98 -- */
+.ui_window--active > footer > div > button.ui_window__ok:not(:active) {
+  outline: none !important;
+  color: #000 !important;
+  border-top: 1px solid #000 !important;
+  border-left: 1px solid #000 !important;
+  border-right: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
+  box-shadow: inset 1px 1px #fff, inset 2px 2px #dfdfdf, inset -1px -1px #808080,  1px 0 #000, 0 1px #000, 1px 1px #000 !important;
+}
+
+button:active {
+  outline: none !important;
+}
+
+/* -- Smooth and simple window animation -- */
+@keyframes close {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+    display: none;
+  }
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.bounce, .flash, .pulse, .rubberBand, .shakeX, .shakeY, .headShake, .swing, .tada, .wobble, .jello, .heartBeat, .backInDown, .backInLeft, .backInRight, .backInUp, .bounceIn, .bounceInDown, .bounceInLeft, .bounceInRight, .bounceInUp, .fadeIn, .fadeInDown, .fadeInDownBig, .fadeInLeft, .fadeInLeftBig, .fadeInRight, .fadeInRightBig, .fadeInUp, .fadeInUpBig, .fadeInTopLeft, .fadeInTopRight, .fadeInBottomLeft, .fadeInBottomRight, .flip, .flipInX, .flipInY, .lightSpeedInRight, .lightSpeedInLeft, .rotateIn, .rotateInDownLeft, .rotateInDownRight, .rotateInUpLeft, .rotateInUpRight, .jackInTheBox, .rollIn, .zoomIn, .zoomInDown, .zoomInLeft, .zoomInRight, .zoomInUp, .slideInDown, .slideInLeft, .slideInRight, .slideInUp {
+  animation: open 0.14s;
+}
+
+.backOutDown, .backOutLeft, .backOutRight, .backOutUp, .bounceOut, .bounceOutDown, .bounceOutLeft, .bounceOutRight, .bounceOutUp, .fadeOut, .fadeOutDown, .fadeOutDownBig, .fadeOutLeft, .fadeOutLeftBig, .fadeOutRight, .fadeOutRightBig, .fadeOutUp, .fadeOutUpBig, .fadeOutTopLeft, .fadeOutTopRight, .fadeOutBottomRight, .fadeOutBottomLeft, .flipOutX, .flipOutY, .lightSpeedOutRight, .lightSpeedOutLeft, .rotateOut, .rotateOutDownLeft, .rotateOutDownRight, .rotateOutUpLeft, .rotateOutUpRight, .rotateOut, .rotateOutDownLeft, .rotateOutDownRight, .rotateOutUpLeft, .rotateOutUpRight, .rollOut, .zoomOut, .zoomOutDown, .zoomOutLeft, .zoomOutRight, .zoomOutUp, .slideOutDown, .slideOutLeft, .slideOutRight, .slideOutUp, .hinge {
+  animation: close 0.14s !important;
+}
+
+/* -- Makes window more like Windows 98 -- */
+.ui_window {
+  padding: 2px !important;
+  border-top: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+}
+
+/* -- Makes menu borders more like Windows 98 -- */
+.ui_menu--open > ul {
+  border-top: 1px solid #dfdfdf !important;
+  border-left: 1px solid #dfdfdf !important;
+  box-shadow: inset 1px 1px #fff, 1px 0 #000, 0 1px #000, 1px 1px #000 !important;
+}
+
+/* --- Menu animations matching Windows 98 --- */
+@keyframes mfade {
+  from {
+    opacity: 0.0;
+  }
+
+  to {
+    opacity: 1.0;
+  }
+}
+
+.ui_menu--open {
+  animation-duration: 0.15s;
+  animation-name: mfade;
+}
+
+
+/* -- Window Buttons -- */
+/* -- Credit: ziad87 -- */
+
+.ui_window__head__close,
+.ui_window__head__config,
+.ui_window__head__help,
+.ui_window__head__maximize,
+.ui_window__head__maximized,
+.ui_window__head__minimize,
+.ui_window__head__pin,
+.ui_window__head__reload {
+  margin: 0;
+  font-family: px_icons;
+  font-size: 8px;
+  width: 15px;
+  height: 14px;
+  line-height: 14px!important;
+  margin-left: 1px !important;
+  text-align: center;
+  padding-bottom: 5px !important;
+  position: relative;
+}
+
+.ui_window__head__close {
+  margin-right: 1px !important;
+}
+
+.ui_window__head__close, .ui_window__head__help {
+  margin-left: 2px !important;
+}
+
+.ui_window__head__close:focus,
+.ui_window__head__config:focus,
+.ui_window__head__help:focus,
+.ui_window__head__maximize:focus,
+.ui_window__head__maximized:focus,
+.ui_window__head__minimize:focus,
+.ui_window__head__pin:focus,
+.ui_window__head__reload:focus {
+  outline-offset: 0;
+}
+
+.ui_window__head__close:before,
+.ui_window__head__config:before,
+.ui_window__head__help:before,
+.ui_window__head__maximize:before,
+.ui_window__head__maximized:before,
+.ui_window__head__minimize:before,
+.ui_window__head__pin:before,
+.ui_window__head__reload:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ui_window__head__close:before,
+.ui_window__head__help:before,
+.ui_window__head__maximize:before,
+.ui_window__head__maximized:before,
+.ui_window__head__minimize:before {
+  content: ''!important;
+}
+
+.ui_window__head__close {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top 3px left 3px;
+}
+
+.ui_window__head__maximize {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top 2px left 2px;
+}
+
+.ui_window__head__maximized {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M2 0h6v2H2zM7 2h1v4H7zM2 2h1v1H2zM6 5h1v1H6zM0 3h6v2H0zM5 5h1v4H5zM0 5h1v4H0zM1 8h4v1H1z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top 2px left 3px;
+}
+
+.ui_window__head__minimize {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: bottom 1px left 4px;
+}
+
+.ui_window__head__help {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 1h2v2H0zM1 0h4v1H1zM4 1h2v2H4zM3 3h2v1H3zM2 4h2v2H2zM2 7h2v2H2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top 2px left 4px;
+}
+
+.ui_window__head__pin:before {
+  content: "A";
+}
+
+.ui_window__head__config:before {
+  content: "H";
+}
+
+.ui_window__head__reload:before {
+  content: "P";
+}
+
+.ui_window__head {
+  color: #fff;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 1px;
+  margin-bottom: 2px;
+  margin-left: 1px !important;
+  ;
+    margin-top: 1px !important;
+}
+
+/* -- Windows 98 Scrollbar -- */
+/* -- CREDITS: DAKEDRES    -- */
+/* dakedres was here ;3 */
+body *::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background: none;
+}
+
+body *::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-button {
+  width: 16px;
+  height: 16px;
+  background: silver;
+  box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px gray;
+  border: 1px solid;
+  border-color: silver #000 #000 silver;
+}
+
+body *::-webkit-scrollbar-track {
+  image-rendering: optimizeSpeed;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAyIDIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyI+CjxtZXRhZGF0YT5NYWRlIHdpdGggUGl4ZWxzIHRvIFN2ZyBodHRwczovL2NvZGVwZW4uaW8vc2hzaGF3L3Blbi9YYnh2Tmo8L21ldGFkYXRhPgo8cGF0aCBzdHJva2U9IiNjMGMwYzAiIGQ9Ik0wIDBoMU0xIDFoMSIgLz4KPC9zdmc+");
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 2px;
+}
+
+body *::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+body *::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTcgNWgxTTYgNmgzTTUgN2g1TTQgOGg3IiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTQgNWg3TTUgNmg1TTYgN2gzTTcgOGgxIiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTggM2gxTTcgNGgyTTYgNWgzTTUgNmg0TTYgN2gzTTcgOGgyTTggOWgxIiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTYgM2gxTTYgNGgyTTYgNWgzTTYgNmg0TTYgN2gzTTYgOGgyTTYgOWgxIiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-corner {
+  background: silver;
+}
+
+/* -- DISABLED CHANGES -- */
+
+
+/* -- Windows 98 Folder Icon [disabled] -- */
+/* .ui_explorer--local > .ui_icon__folder:not(._ui_icon__lnk42) > img{
+   content: url("https://win98icons.alexmeub.com/icons/png/directory_closed-3.png")
+} */
+/* -- Sharper alert body text using G80.M3U trick -- */
+/* -- CHANGES COLOR ANYTHING INSIDE OF .ui_alert__text INCLUDING TEXT BOXES -- */
+/* -- DISABLED -- */ /*
+.ui_alert__text, .ui_form__field label{
+    color: rgb(0, 0, 0);
+    text-shadow: #c0c0c0 -1px -1px 0px, #c0c0c0 1px -1px 0px, #c0c0c0 -1px 1px 0px, #c0c0c0 1px 1px 0px;
+    filter: contrast(4) brightness(0.756);
+}  */
+
+/* Windows 94 beta wallpaper
+   background: url("https://media.discordapp.net/attachments/744570181342330951/748987515414773790/unknown.png"), linear-gradient(135deg,#d017d0 0,#01ecec 100%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center; 
+*/
+
+/* -- Grid apps list -- */
+
+/*
+
+#ui_menu_3 .ui_menu__submenu{
+
+}
+#ui_menu_3 .ui_menu__submenu ul{
+columns: 13;
+width:  780px !important;
+height: 100% !important;
+padding-right: 8px !important;
+}
+#ui_menu_3 .ui_menu__submenu li{
+    margin: 0 !important;
+    padding: 0 !important;
+display: inline-block !important;
+
+width: 61px !important;
+height: 55px !important;
+min-width: 0 !important;
+max-width: none !important;
+min-height: 0 !important;
+text-align: center !important;
+}
+.startmenu_cmd{
+    display: none !important;
+}
+#ui_menu_3 .ui_menu__submenu li > .ui_menu__item__text{
+
+    flex: none !important;
+     display: block;
+    height: 14px !important;
+   
+  
+}
+#ui_menu_3 .ui_menu__submenu li img{
+    width: 32px !important;
+    height: 32px !important;
+    vertical-align: middle;
+    margin: 2px !important;
+}
+*/

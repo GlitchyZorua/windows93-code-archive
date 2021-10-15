@@ -1,0 +1,1 @@
+le._apps.explorer={icon:"/c/sys/skins/w93/explorer.png",exec:function(){$explorer(((this.arg.arguments||[]).join(" ")||"/a/")+"/")}};

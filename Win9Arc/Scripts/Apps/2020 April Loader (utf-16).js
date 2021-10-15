@@ -1,0 +1,1 @@
+!(async _=>{await $loader(["/sys/apps/2020.js"]);system42.trigger('splash:ready')})()
