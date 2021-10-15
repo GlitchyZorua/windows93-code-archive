@@ -9,8 +9,8 @@ It's basically my collection of apps, and shit from w93
 
 ## Many thanks to litevx for saving this archive.
 You have my respect <3
-## This Repo can't be licsensed.
-The archive might have files that has different linseses.
+## This Repo can't be licensed
+Some files might be protected by MIT, Or CC.
 
 You are advised to download them at your own risk!
 
