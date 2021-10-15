@@ -6,8 +6,12 @@ It's basically my collection of apps, and shit from w93
 
 
 # Licensing
+
+## Many thanks to litevx for saving this archive.
+You have my respect <3
 ## This Repo can't be licsensed.
-The archive have files that might have different linseses
+The archive might have files that has different linseses.
+
 You are advised to download them at your own risk!
 
 
