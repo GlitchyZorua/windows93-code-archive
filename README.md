@@ -4,9 +4,8 @@ A place where you can find some good stuff i guess.
 
 It's basically my collection of apps, and shit from w93
 
-# Many thanks to litevx for saving this archive.
-You have my respect <3
-
+# Credits
+litevx - for creating the archive
 
 # Licensing
 
