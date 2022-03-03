@@ -1,0 +1,5 @@
+I would put the entire server archive in the github archive, but it weighs over 22MB!
+
+So, the file is only exclusive to the internet archive, here: https://archive.org/download/cover_20210628/w93server.zip
+
+Mirror: https://bread.staropa.net/etc/w93server.txt
