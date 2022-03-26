@@ -19,6 +19,7 @@ W93 Discord: https://discord.gg/7cM9bC5
 - /b/ stuffz
 - trollbox stuffz
 - myspace stuffz
+- Windows 93 Aethetics
 - Many many more! :D
 
 # Credits
