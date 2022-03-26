@@ -1,0 +1,309 @@
+================ WINDOW ================
+{
+	active() - Function
+		When executed, makes window the active window, and goes above every window.
+
+	changeFooter(footerText) - Function
+		footerText is a string
+
+		Changes window footer to footerText. There will be no changes if there was no footer initially.
+
+	changeIcon(iconPath) - Function
+		iconPath is a string
+
+		Changes window icon to iconPath. There will be no changes if there was no icon initially.
+		iconPath can be a URL or a Windows 93 path.
+
+	changeSize({width: Integer, height: Integer}) - Function
+		Changes width and height of the window.
+
+	changeTitle(titleText) - Function
+		titleText is a string
+
+		Changes the window's title to titleText
+
+	close() - Function
+		Closes the window
+
+	destroy() - Function
+		Destroys (closes immediately, without the animation) the window
+
+	el - Object {
+		All the HTML elements of the window, can't be arsed documenting this lol
+	}
+
+	id - Integer
+		The ID of the window.
+
+	maximize() - Function
+		Maximizes the window, unmaximizes the window if ran when already maximized.
+
+	menu - Object {
+		something else i dont under stand pls help
+	}
+
+	minimize() - Function
+		Minimizes the window.
+
+	restore() - Function
+		Restores the window (unminimizes)
+
+	cfg - Object {
+		activable - Boolean (default: true)
+			UNKNOWN
+
+		ajax - Boolean (default: false)
+			UNKNOWN
+
+		animationIn - String (default: random)
+			Animation used when the window starts.
+			Refer to WILL_BE_AN_ANIMATIONS_PAGE for a list of animations.
+
+		animationOut - String (default: random)
+			Animation used when the window closes.
+			Refer to WILL_BE_AN_ANIMATIONS_PAGE for a list of animations.
+
+		automaximize - Boolean (default: false)
+			When true, window will start maximized.
+
+		baseClass - String (default: "")
+			UNKNOWN
+
+		baseHeight - Maybe expects an Integer? (default: null)
+			UNKNOWN
+
+		baseWidth - Maybe expects an Integer? (default: null)
+			UNKNOWN
+
+		bodyClass - String (default: "")
+			UNKNOWN
+
+		borderBottomWidth - Integer (default: 1)
+			UNKNOWN
+			Don't notice anything different, from testing.
+
+		borderLeftWidth - Integer (default: 1)
+			UNKNOWN
+			Don't notice anything different, from testing.
+
+		borderRightWidth - Integer (default: 1)
+			UNKNOWN
+			Don't notice anything different, from testing.
+
+		borderTopWidth - Integer (default: 1)
+			UNKNOWN
+			Don't notice anything different, from testing.
+
+		btnOk - String
+			Button to be used for OK
+			When blank, button does not appear.
+
+		btnCancel - String
+			Button to be used for Cancel
+			When blank, button does not appear.
+
+		caller - UNKNOWN (default: undefined)
+			UNKNOWN
+
+		center - Boolean (default: false)
+			When true, window will start in the center of the viewport.
+
+		closable - Boolean (default: true)
+			When false, window cannot be closed.
+			The close button in the title bar will be gone and the close button in the context menu will be disabled.
+
+		constrain - Boolean (default: false)
+			When true, keeps the window from moving outside of the viewport.
+
+		contextmenu - Object {
+			The contents of the context menu that appears when you right click on the window on the dock or title bar.
+				before:Close - Array [
+					The contents that appear on the context menu before the close button at the end.
+					Array Item - Object { 
+						name - String (Name of item in context menu. If the name is "---" it will be a seperator.)
+						action - Function (Function to be executed when item is pressed.)
+						items - Function (Undocumented)
+					}
+				]
+		}
+
+		contextmenuOnBody - Boolean (default: false)
+			When true, right clicking anywhere in the window will make the window's context menu appear.
+
+		dest - DOM (default: #s42_desktop)
+			The HTML element of the Windows 93 Desktop.
+
+		dock - DOM (default: #s42_dock)
+			The HTML element inside the taskbar, which all opened windows are
+			(Could somebody write a better explanation?)
+
+		dockable - Boolean (default: true)
+			When false, the window will not appear in the taskbar.
+
+		draggable - Boolean (default: true)
+			When false, window will not be able to be dragged.
+
+		footer - String (default: "")
+			Contents to appear on the bottom of the window.
+			HTML can be used, as with the majority of things here that expect a string.
+		
+		header - Boolean (default: true)
+			When false, the title bar will not be visible.
+
+		headerBtn - Array
+			Undocumented
+
+		height - Integer (default: 270)
+			Default height of the window
+
+		help - String (default: "")
+			Text to be displayed when the Help button is pressed.
+			Help button will not be displayed if the string is blank.
+
+		html - String (default: "")
+			HTML to be displayed inside the window.
+
+		icon - String
+			URL or Windows 93 path for the icon to be used for the Window
+
+		left - String
+			How far left (in px) from the left of the viewport that the window should start at. 
+
+		maximizable - Boolean (default: true)
+			When false, the window cannot be maximized.
+
+		menu - Array [
+			The menubar of a window
+			Array Item - Object {
+				name - String (Name of item in context menu. If the name is "---" it will be a seperator.)
+				action - Function (Function to be executed when item is pressed.)
+				items - Function (Undocumented)
+			}
+		]
+
+		minHeight - Integer
+			The minimum permitted height of a window
+
+		minWidth - Integer
+			The minimum permitted width of a window
+						
+		minimizable - Boolean (default: true)
+			When false, the window cannot be minimized.
+
+		noOut - Boolean (default: false)
+			Unknown
+
+		onactive - Function
+			Function gets executed when the window is active
+
+		oncancel - Function
+			Function gets executed when the Cancel button is pressed
+
+		onclose - Function
+			Function gets executed when the window is closing
+
+		ondestroy - Function
+			Function gets executed when the window has closed
+
+		ondrag - Function
+			Function gets executed every time the window has been moved when dragging
+
+		ondragstop - Function
+			Function gets executed when the window has stopped being dragged
+
+		onminimize - Function
+			Function gets executed when the window has been minimized
+
+		onok - Function
+			Function gets executed when the OK button is pressed
+
+		onopen - Function
+			Function gets executed when the window gets opened
+
+		onready - Function
+			Function gets executed when the window is ready
+
+		onresize - Function
+			Function gets executed when the window has been minimized/maximized
+
+		resizable - Boolean (default: true)
+			If false, the window will not be able to be resized.
+
+		style - HTMLElement.style
+			CSS used for window
+			Please read https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+
+		title - String (default: "")
+			The window's title
+
+		top - String
+			How far down (in px) from the top of the viewport that the window should start at. 
+
+		url - String
+			Puts an iframe in the window for the specified URL
+
+		width - Integer (default: 390)
+			Default width of the window
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							
+$prompt(
+              {
+                title: "Doctor Marburg Antivirus",
+                img: that.app.icon,
+                btnOk: "Say it",
+                msg: "Say 99...",
+              },
+              function(isOk, res) {
+                if (isOk && res == "99") {
+                  killAllVirus();
+                } else if (isOk) {
+                  $confirm(
+                    {
+                      title: "Doctor Marburg Antivirus",
+                      img: that.app.icon,
+                      btnOk: "Let's do that",
+                      msg:
+                        "Mhh, you're very sick, unfortunately I can't do anything for you... Except cleaning your computer",
+                    },
+                    function(isOk, res) {
+                      if (isOk) {
+                        killAllVirus();
+                      }
+                    }
+                  );
+                }
+              }
+            );
