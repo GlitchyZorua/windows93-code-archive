@@ -7,6 +7,7 @@ It's basically my collection of apps, and shit from w93
 archive.org: https://archive.org/details/cover_20210628
 
 My Discord: https://discord.gg/Ms4NFJb
+
 W93 Discord: https://discord.gg/7cM9bC5
 # Credits
 ## created by...
