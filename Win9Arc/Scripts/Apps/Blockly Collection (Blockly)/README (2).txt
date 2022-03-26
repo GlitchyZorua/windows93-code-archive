@@ -1,1 +1,0 @@
-This is a collection of scripts that a user named "Blockly" sent in the Windows 93 Discord. Most of them were made late 2020 and are usually very small and useless.
