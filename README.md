@@ -9,6 +9,19 @@ archive.org: https://archive.org/details/cover_20210628
 My Discord: https://discord.gg/Ms4NFJb
 
 W93 Discord: https://discord.gg/7cM9bC5
+
+# What we are looking for...
+- JS Apps
+- Windows 93 Themes
+- Windows 93 Myspace Themes
+- Rememerable moments in the community
+- Windows 93 Discord Server Banners and ICONS!
+- /b/ stuffz
+- trollbox stuffz
+- myspace stuffz
+- Windows 93 Aethetics
+- Many many more! :D
+
 # Credits
 ## created by...
 Proudly created by jacobw
@@ -16,9 +29,7 @@ Proudly created by jacobw
 jakenpopp
 ## people that helped contributing this mess.
 litevx - sharing the code archive.
-
 host - contributing.
-
 dakrk - contributing.
 # Licensing
 
