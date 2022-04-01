@@ -29,7 +29,9 @@ Proudly created by jacobw
 jakenpopp
 ## people that helped contributing this mess.
 litevx - sharing the code archive.
+
 host - contributing.
+
 dakrk - contributing.
 # Licensing
 
