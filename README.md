@@ -14,7 +14,7 @@ W93 Discord: https://discord.gg/7cM9bC5
 - JS Apps
 - Windows 93 Themes
 - Windows 93 Myspace Themes
-- Rememerable moments in the community
+- Rememberable moments in the community
 - Windows 93 Discord Server Banners and ICONS!
 - /b/ stuffz
 - trollbox stuffz
