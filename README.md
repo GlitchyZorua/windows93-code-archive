@@ -22,6 +22,14 @@ W93 Discord: https://discord.gg/7cM9bC5
 - Windows 93 Aethetics
 - Many many more! :D
 
+
+What we aren't looking for:
+
+- Myspace passwords and emails
+
+
+If your personal information is associated with the archive, please contact me at RetroJBOT@hotmail.com
+
 # Credits
 ## created by...
 Proudly created by jacobw
