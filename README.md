@@ -26,7 +26,7 @@ W93 Discord: https://discord.gg/7cM9bC5
 What we aren't looking for:
 
 - Myspace passwords and emails
-
+- Windows 96
 
 If your personal information is associated with the archive, please contact me at RetroJBOT@hotmail.com
 
