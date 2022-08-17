@@ -23,7 +23,7 @@ W93 Discord: https://discord.gg/7cM9bC5
 - Many many more! :D
 
 
-What we aren't looking for:
+# What we aren't looking for:
 
 - Myspace passwords and emails
 - Windows 96
