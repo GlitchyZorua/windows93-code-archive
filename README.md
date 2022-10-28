@@ -2,7 +2,7 @@
 A place where you can find some good stuff i guess.
 
 
-It's basically my collection of apps, and shit from w93
+It's basically my collection of apps, and stuff from w93
 
 archive.org: https://archive.org/details/cover_20210628
 
@@ -10,7 +10,6 @@ My Discord: https://discord.gg/Ms4NFJb
 
 W93 Discord: https://discord.gg/7cM9bC5
  
-
 
 # What we are looking for...
 - JS Apps
@@ -29,6 +28,8 @@ W93 Discord: https://discord.gg/7cM9bC5
 
 - Myspace passwords and emails
 - Windows 96
+- Off-Topic
+
 
 If your personal information is associated with the archive, please contact me at RetroJBOT@hotmail.com
 
