@@ -29,7 +29,8 @@ W93 Discord: https://discord.gg/7cM9bC5
 - Myspace passwords and emails
 - Windows 96
 - Off-Topic
-- Petscop 
+- Petscop (Yes, I know ilikebreadtoomuch contributed to this, its still not w93 related)
+
 
 If your personal information is associated with the archive, please contact me at RetroJBOT@hotmail.com
 
