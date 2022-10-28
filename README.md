@@ -29,7 +29,7 @@ W93 Discord: https://discord.gg/7cM9bC5
 - Myspace passwords and emails
 - Windows 96
 - Off-Topic
-
+- Petscop 
 
 If your personal information is associated with the archive, please contact me at RetroJBOT@hotmail.com
 
