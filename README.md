@@ -34,7 +34,10 @@ W93 Discord: https://discord.gg/7cM9bC5
 
 If your personal information is associated with the archive, please contact me at RetroJBOT@hotmail.com
 
-
+# TO DO LIST
+- Make a separate archive for https://ibiblio.org/gio/iconbrowser/
+- Archive MORE CSS
+- Create Videos folder for stive.mp4, including a translated version
 
 # Credits
 ## created by...
