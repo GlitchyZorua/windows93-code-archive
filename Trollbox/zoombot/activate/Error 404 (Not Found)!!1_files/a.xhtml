@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Problem loading page</title>
+    <link rel="stylesheet" href="chrome://browser/skin/aboutNetError.css" type="text/css" media="all" />
+    <link rel="icon" id="favicon" href="chrome://global/skin/icons/info.svg" />
+    <link rel="localization" href="browser/aboutCertError.ftl" />
+    <link rel="localization" href="browser/nsserrors.ftl" />
+    <link rel="localization" href="branding/brand.ftl" />
+    <link rel="localization" href="browser/netError.ftl" />
+  </head>
+
+  <body dir="ltr" class="neterror">
+    <!-- ERROR ITEM CONTAINER (removed during loading to avoid bug 39098) -->
+    
+
+    <!-- PAGE CONTAINER (for styling purposes only) -->
+    <div id="errorPageContainer" class="container">
+      <div id="text-container">
+        <!-- Error Title -->
+        <div class="title">
+          <h1 class="title-text" data-l10n-id="csp-xfo-error-title">Firefox Can’t Open This Page</h1>
+        </div>
+
+        <!-- LONG CONTENT (the section most likely to require scrolling) -->
+        <div id="errorLongContent">
+
+          <!-- Short Description -->
+          <div id="errorShortDesc" style="display: none;">
+            <p id="errorShortDescText" data-l10n-id="ssl-connection-error" data-l10n-args="{&quot;errorMessage&quot;:&quot;&quot;,&quot;hostname&quot;:&quot;www.facebook.com&quot;}">An error occurred during a connection to www.facebook.com. </p>
+          </div>
+
+          <div id="errorShortDesc2">
+              <p id="errorShortDescText2"></p>
+          </div>
+
+          <div id="errorWhatToDoTitle">
+              <p id="errorWhatToDoTitleText"></p>
+          </div>
+
+          <div id="errorWhatToDo">
+              <p id="badStsCertExplanation" hidden="true"><span class="hostname"></span>
+ has a security policy called HTTP Strict Transport Security (HSTS), 
+which means that Firefox can only connect to it securely. You can’t add 
+an exception to visit this site.</p>
+              <p id="errorWhatToDoText"></p>
+          </div>
+
+          <div id="errorWhatToDo2">
+              <p id="errorWhatToDoText2"></p>
+              <p id="badStsCertExplanation" hidden="true"><span class="hostname"></span>
+ has a security policy called HTTP Strict Transport Security (HSTS), 
+which means that Firefox can only connect to it securely. You can’t add 
+an exception to visit this site.</p>
+          </div>
+
+          <!-- Long Description (Note: See netError.dtd for used XHTML tags) -->
+          <div id="errorLongDesc" data-l10n-id="csp-xfo-blocked-long-desc" data-l10n-args="{&quot;hostname&quot;:&quot;www.facebook.com&quot;}">To
+ protect your security, www.facebook.com will not allow Firefox to 
+display the page if another site has embedded it. To see this page, you 
+need to open it in a new window.</div>
+
+          <div id="tlsVersionNotice" hidden="true">
+            <p data-l10n-id="cert-error-old-tls-version">This website might not support the TLS 1.2 protocol, which is the minimum version supported by Firefox.</p>
+          </div>
+
+          <div id="learnMoreContainer" style="display: block;">
+            <p><a id="learnMoreLink" target="_blank" rel="noopener noreferrer" data-telemetry-id="learn_more_link" href="https://support.mozilla.org/1/firefox/106.0.4/Linux/en-US/xframe-neterror-page">Learn more…</a></p>
+          </div>
+
+          <div id="openInNewWindowContainer" class="button-container" style="display: block;">
+            <p><a id="openInNewWindowButton" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/connect/xd_arbiter/r/FdM1l_dpErI.js?version=42#channel=f250d2669305104&amp;origin=http%3A%2F%2Fclonezone.link">
+            <button class="primary" data-l10n-id="open-in-new-window-for-csp-or-xfo-error">Open Site in New Window</button></a></p>
+          </div>
+        </div>
+
+        <!-- UI for option to report certificate errors to Mozilla. Removed on
+             init for other error types .-->
+        <div id="prefChangeContainer" class="button-container">
+          <p>It looks like your network security settings might be causing this. Do you want the default settings to be restored?</p>
+          <button id="prefResetButton" class="primary">Restore default settings</button>
+        </div>
+
+        <div id="certErrorAndCaptivePortalButtonContainer" class="button-container">
+          <button id="returnButton" class="primary" data-telemetry-id="return_button_top">Go Back (Recommended)</button>
+          <button id="openPortalLoginPageButton" class="primary">Open Network Login Page</button>
+          <button class="primary try-again">Try Again</button>
+          <button id="advancedButton" data-telemetry-id="advanced_button">Advanced…</button>
+        </div>
+      </div>
+
+      <div id="netErrorButtonContainer" class="button-container" style="display: none;">
+        <button class="primary try-again">Try Again</button>
+      </div>
+
+      <div id="advancedPanelContainer">
+        <div id="badCertAdvancedPanel" class="advanced-panel" hidden="">
+          <p id="badCertTechnicalInfo"></p>
+          <a id="viewCertificate" href="javascript:void(0)">View Certificate</a>
+          <div id="advancedPanelButtonContainer" class="button-container">
+            <button id="advancedPanelReturnButton" class="primary" data-telemetry-id="return_button_adv">Go Back (Recommended)</button>
+            <button class="primary try-again">Try Again</button>
+            <div class="exceptionDialogButtonContainer">
+              <button id="exceptionDialogButton" data-telemetry-id="exception_button">Accept the Risk and Continue</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="blockingErrorReporting" class="advanced-panel">
+            <p class="toggle-container-with-text">
+                <input type="checkbox" id="automaticallyReportBlockingInFuture" role="checkbox" />
+                <label for="automaticallyReportBlockingInFuture">Report errors like this to help Mozilla identify and block malicious sites</label>
+            </p>
+        </div>
+
+        <div id="certificateErrorDebugInformation" class="advanced-panel" hidden="">
+          <button id="copyToClipboardTop" data-telemetry-id="clipboard_button_top">Copy text to clipboard</button>
+          <div id="certificateErrorText"></div>
+          <button id="copyToClipboardBottom" data-telemetry-id="clipboard_button_bot">Copy text to clipboard</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="chrome://browser/content/certerror/aboutNetErrorCodes.js"></script>
+  <script type="module" src="chrome://browser/content/certerror/aboutNetError.js"></script>
+</html>
