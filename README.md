@@ -22,6 +22,7 @@ W93 Discord: https://discord.gg/7cM9bC5
 - myspace stuffz
 - Windows 93 Aethetics
 - Beepbox Codes
+- ByteBeat codes
 - Fan Made windows icons
 - Many many more! :D
 
