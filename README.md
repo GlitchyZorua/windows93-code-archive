@@ -4,7 +4,10 @@ A place where you can find some good stuff i guess.
 
 It's basically my collection of apps, and stuff from w93
 
-archive.org: https://archive.org/details/cover_20210628
+
+archive.org: https://archive.org/details/windows93-code-archive
+(OLD) archive.org: https://archive.org/details/cover_20210628
+
 
 My Discord: https://discord.gg/Ms4NFJb
 
