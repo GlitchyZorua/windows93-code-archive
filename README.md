@@ -33,7 +33,9 @@ W93 Discord: https://discord.gg/7cM9bC5
 - Windows 96
 - Off-Topic
 - Petscop (Yes, I know ilikebreadtoomuch contributed to this, its still not w93 related)
-If your personal information is associated with the archive, please contact me at RetroJBOT@hotmail.com
+
+
+If your personal information is associated with the archive, please contact me at RetroJBOT@hotmail.com, It will be carefully disposed of.
 
 # TO DO LIST
 - Make a separate archive for https://ibiblio.org/gio/iconbrowser/
