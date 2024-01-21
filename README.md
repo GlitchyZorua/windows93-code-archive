@@ -48,7 +48,7 @@ If your personal information is associated with the archive, please contact me a
 
 # Credits
 ## created by...
-Proudly created by jacobw
+Proudly created by GlitchyZorua
 ## windows 93 is by...
 jakenpopp
 ## people that helped contributing this mess.
