@@ -413,7 +413,7 @@ socket.on('message',function(data){
             sendMsg('Im fine as always!')
         }
         if(data.msg.startsWith('about')){
-            sendMsg('ℹbot by: Jacob Workman,\nCode by: HOST and Jacob Workman\n Jacobwworkman, CREDITS to lw82! he know how to fix my bot, 93!bot Copyright, 2017-2018.')
+            sendMsg('ℹbot by: J.W.,\nCode by: HOST and J.W.\n J.W., CREDITS to lw82! he know how to fix my bot, 93!bot Copyright, 2017-2018.')
         }
         if(data.msg.startsWith('reload')){
             sendMsg('↪ all commands has been reloaded')
