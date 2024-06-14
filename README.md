@@ -62,7 +62,7 @@ thedude - contributing.
 
 # Licensing
 
-## This Repo can't be licensed
+## This repo can't be licensed
 Some files might be protected by MIT, Or CC.
 
 You are advised to download them at your own risk!
