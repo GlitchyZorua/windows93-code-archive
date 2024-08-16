@@ -1,3 +1,0 @@
-ryoku=nat
-yes=me
-ash=kayoung
