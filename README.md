@@ -16,7 +16,7 @@ W93 Discord: https://discord.gg/7cM9bC5
  
 
 # What we are looking for...
-- Windows 94 Assets (TOP PRIORITY, ASSETS ARE LOST.) 
+- Windows 94 Assets (TOP PRIORITY, ASSETS ARE PARTIALLY LOST.) 
 - JS Apps
 - Windows 93 Themes
 - Windows 93 Myspace Themes
