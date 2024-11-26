@@ -49,12 +49,14 @@ If your personal information is associated with the archive, please contact me a
 
 # Credits
 ## created by...
-Proudly created by GlitchyZorua
+GlitchyZorua - Proudly extending the archive
+
+litevx - sharing the code archive.
+
+
 ## windows 93 is by...
 jakenpopp
 ## people that helped contributing this mess.
-litevx - sharing the code archive.
-
 host - contributing.
 
 dakrk - contributing.
