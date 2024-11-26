@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css">
+        <style>
+            body {
+                overflow: hidden;
+            }
+
+            #error {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                background-color: darkred;
+                color: white;
+                text-align: center;
+                position: fixed;
+                left: 0;
+                top: 0;
+                z-index: 100;
+            }
+        </style>
+    </head>
+    <body class="window" style="margin:0">
+        <div class="row">
+            <section id="section_left">
+                <ul class="filters">
+                    <li><input type="text" id="filter_name"></li>
+                    <li><input type="text" id="filter_author"></li>
+                </ul>
+                <ul id="app_list">
+                    
+                </ul>
+            </section>
+            <section id="section_right">
+                <div id="no_app">
+                    <p>Click on any app in the left section to view its details.</p>
+                </div>
+                <div id="app_view">
+                    <header class="row">
+                        <img id="app_view_icon">
+                        <div class="column">
+                            <div class="row">
+                                <b id="app_view_name">Lorem Ipsum</b>
+                                <label id="app_view_version tip">(1.0)</label>
+                            </div>
+                            <label id="app_view_author">Driftini</label>
+                        </div>
+                    </header>
+                    <p id="app_view_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsa quisquam esse at repellat. Architecto ut quibusdam ipsam libero aperiam, praesentium explicabo non deleniti laborum perspiciatis mollitia neque. Quasi, magnam.</p>
+                    <footer>
+                        <button>View Code</button>
+                        <button>Install</button>
+                    </footer>
+                </div>
+                <div id="settings">
+                    <ul>
+                        <li><b>General</b></li>
+                        <li><input type="checkbox" id="setting_untrusted"><label for="setting_untrusted">Show untrusted apps</label></li>
+                        <li><input type="checkbox" id="setting_saveonrefresh"><label for="setting_saveonrefresh">Save app list locally</label></li>
+                        <li><i class="tip">App lists will be saved in <b><label class="lunar_path"></label>listdumps/</b>.</i></li>
+                        <li><b>Debugging</b></li>
+                        <li><input type="checkbox" id="setting_verbose"></li><label for="setting_verbose">Log actions in console</label></li>
+                        <li><input type="checkbox" id="setting_filterverbose"></li><label for="setting_filterverbose">Log filtering in console</label></li>
+                    </ul>
+                    <footer>
+                        <button>Apply</button>
+                    </footer>
+                </div>
+            </section>
+        </div>
+
+        <button id="settings_button" class="floating">H</button>
+        <button id="refresh_button" class="floating">P</button>
+
+        <div id="error">
+            <h3 style="text-align:center;">Uh oh...</h3>
+            ...something went wrong while starting LunarRabbit.
+            <br>Reboot Windows93 and try restarting the app.
+            <br>If the problem persists, backup your LunarRabbit folder and reinstall LunarRabbit.
+        </div>
+
+        <script>
+            let LunarDir = "/a/LunarRabbit/"
+          
+            top.$file.open(LunarDir + "store.css","String",function(css){
+                let style = document.createElement("style")
+                style.innerHTML = css
+                document.head.appendChild(style)
+            })
+            top.$file.open(LunarDir + "store.js","String",function(js){
+                let script = document.createElement("script")
+                script.innerHTML = js
+                document.head.appendChild(script)
+            })
+        </script>
+    </body>
+</html>

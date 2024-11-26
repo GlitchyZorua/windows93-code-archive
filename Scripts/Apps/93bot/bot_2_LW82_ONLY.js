@@ -1,0 +1,236 @@
+﻿var quotes = ['http://generated.inspirobot.me/082/aXm7345xjU.jpg','http://generated.inspirobot.me/082/aXm3437xjU.jpg','http://generated.inspirobot.me/083/aXm3704xjU.jpg','http://generated.inspirobot.me/084/aXm5668xjU.jpg','http://generated.inspirobot.me/086/aXm5258xjU.jpg','http://generated.inspirobot.me/083/aXm4342xjU.jpg','http://generated.inspirobot.me/086/aXm3614xjU.jpg','http://generated.inspirobot.me/082/aXm8948xjU.jpg','http://generated.inspirobot.me/082/aXm8466xjU.jpg','http://generated.inspirobot.me/086/aXm7608xjU.jpg','http://generated.inspirobot.me/085/aXm9191xjU.jpg','http://generated.inspirobot.me/082/aXm7315xjU.jpg','http://generated.inspirobot.me/084/aXm777xjU.jpg','http://generated.inspirobot.me/083/aXm8469xjU.jpg ','http://generated.inspirobot.me/085/aXm1138xjU.jpg','http://generated.inspirobot.me/083/aXm609xjU.jpg','http://generated.inspirobot.me/084/aXm8616xjU.jpg','http://generated.inspirobot.me/082/aXm7407xjU.jpg','http://generated.inspirobot.me/082/aXm4866xjU.jpg','http://generated.inspirobot.me/084/aXm9385xjU.jpg','http://generated.inspirobot.me/084/aXm616xjU.jpg','http://generated.inspirobot.me/082/aXm2494xjU.jpg','http://generated.inspirobot.me/084/aXm3446xjU.jpg','http://generated.inspirobot.me/082/aXm1953xjU.jpg','http://generated.inspirobot.me/086/aXm3823xjU.jpg','http://generated.inspirobot.me/086/aXm2976xjU.jpg','http://generated.inspirobot.me/084/aXm5790xjU.jpg','http://generated.inspirobot.me/082/aXm9536xjU.jpg','http://generated.inspirobot.me/085/aXm8797xjU.jpg','http://generated.inspirobot.me/083/aXm3915xjU.jpg','http://generated.inspirobot.me/084/aXm7948xjU.jpg','http://generated.inspirobot.me/084/aXm4712xjU.jpg','http://generated.inspirobot.me/083/aXm7339xjU.jpg','http://generated.inspirobot.me/085/aXm4343xjU.jpg','http://generated.inspirobot.me/082/aXm4378xjU.jpg','http://generated.inspirobot.me/086/aXm9375xjU.jpg','http://generated.inspirobot.me/083/aXm8764xjU.jpg','http://generated.inspirobot.me/084/aXm4352xjU.jpg','http://generated.inspirobot.me/082/aXm9301xjU.jpg','http://generated.inspirobot.me/086/aXm5607xjU.jpg','http://generated.inspirobot.me/085/aXm7718xjU.jpg','http://generated.inspirobot.me/083/aXm4064xjU.jpg','http://generated.inspirobot.me/085/aXm475xjU.jpg','http://generated.inspirobot.me/082/aXm8025xjU.jpg','http://generated.inspirobot.me/085/aXm9747xjU.jpg','http://generated.inspirobot.me/083/aXm7781xjU.jpg','http://generated.inspirobot.me/083/aXm8086xjU.jpg','http://generated.inspirobot.me/083/aXm146xjU.jpg','http://generated.inspirobot.me/084/aXm1748xjU.jpg','http://generated.inspirobot.me/086/aXm2124xjU.jpg','http://generated.inspirobot.me/082/aXm3391xjU.jpg','http://generated.inspirobot.me/085/aXm750xjU.jpg','http://generated.inspirobot.me/082/aXm7586xjU.jpg','http://generated.inspirobot.me/083/aXm4917xjU.jpg','http://generated.inspirobot.me/083/aXm4478xjU.jpg','http://generated.inspirobot.me/082/aXm432xjU.jpg','http://generated.inspirobot.me/082/aXm310xjU.jpg','http://generated.inspirobot.me/082/aXm3204xjU.jpg','http://generated.inspirobot.me/085/aXm9885xjU.jpg','http://generated.inspirobot.me/086/aXm1861xjU.jpg','http://generated.inspirobot.me/084/aXm2071xjU.jpg','http://generated.inspirobot.me/083/aXm381xjU.jpg','http://generated.inspirobot.me/084/aXm7015xjU.jpg','http://generated.inspirobot.me/084/aXm4260xjU.jpg','http://generated.inspirobot.me/083/aXm7656xjU.jpg','http://generated.inspirobot.me/084/aXm4358xjU.jpg','http://generated.inspirobot.me/084/aXm3466xjU.jpg','http://generated.inspirobot.me/084/aXm9606xjU.jpg','http://generated.inspirobot.me/082/aXm8334xjU.jpg','http://generated.inspirobot.me/084/aXm6201xjU.jpg','http://generated.inspirobot.me/085/aXm6812xjU.jpg','http://generated.inspirobot.me/082/aXm7582xjU.jpg','http://generated.inspirobot.me/082/aXm9099xjU.jpg','http://generated.inspirobot.me/082/aXm1668xjU.jpg','http://generated.inspirobot.me/086/aXm7839xjU.jpg','http://generated.inspirobot.me/083/aXm4292xjU.jpg','http://generated.inspirobot.me/085/aXm1521xjU.jpg','http://generated.inspirobot.me/085/aXm7627xjU.jpg','http://generated.inspirobot.me/083/aXm7929xjU.jpg','http://generated.inspirobot.me/086/aXm923xjU.jpg','http://generated.inspirobot.me/086/aXm2513xjU.jpg','http://generated.inspirobot.me/084/aXm7383xjU.jpg','http://generated.inspirobot.me/086/aXm2813xjU.jpg','http://generated.inspirobot.me/084/aXm6831xjU.jpg','http://generated.inspirobot.me/083/aXm2065xjU.jpg'] //less quotes
+var trollboxMessagesSent = 0
+var trollboxMessagesSentThisMinute = 0;
+var trollboxMessagesSentMinute = []
+var ball = ['Yes.','No.','I think so.','Maybe?','Ask again later.','Pretty sure.','Not at all.','Probably.','Probably not.','I think so?','Not that I remember.']
+var leaves = 0
+var joins = 0
+var LMoS = 0
+var TS = 0
+setInterval(function(){
+	TS += 0.1
+},100)
+function getAvarage(array){
+      var e = 0;
+    for(let i = 0;i < array.length;i++){
+        e = e + array[i]
+    }
+      return Math.round(e / array.length)
+}
+setInterval(function(){
+    trollboxMessagesSentMinute.push(trollboxMessagesSentThisMinute)
+    trollboxMessagesSentThisMinute = 0
+},60000)
+var thisDate;
+socket.on('message',function(data){
+	if(TS > LMoS){
+		LMoS = TS
+	}
+	TS = 0
+	trollboxMessagesSent++
+    	trollboxMessagesSentThisMinute++
+	thisDate = new Date();
+  	data.msg = decodeHtmlEntity(data.msg)
+    data.nick = decodeHtmlEntity(data.nick)
+    data.msg = data.msg.trim()
+  	if(data.msg.startsWith('!bot ')&&data.nick!=undefined){
+    	data.msg = data.msg.slice(5);
+      	if(data.msg.startsWith('date')){
+        	socket.emit('message','📆 '+thisDate.getMonth()+'/'+thisDate.getDate()+'/'+thisDate.getFullYear())
+        }
+        if(data.msg.startsWith('time')){
+        	socket.emit('message','🕒 '+thisDate.getHours()+':'+thisDate.getMinutes()+' (24 Hour Time)')
+        }
+      	if(data.msg.startsWith('help')){
+        	socket.emit('message','❔ Need Help? help, date, time, rename <name>, echo <text>, dice [number of sides], ae <js>, color <hex/Color name>, joins, leaves, msgSent, MpM, MtM, 8ball [A qustion], LMoS, hi, hello, OwO, Trophy, lol, iwt, iwc, nat, llc, lw82, shrug, bot, about, !bot, reload, hos, zoombot, fith, hos, ndk, con, kao, nutnat, nat, nut, sleep, soni, fort, robl')
+        }
+	if(data.msg.startsWith('8ball')){
+        	socket.emit('message','🎱 '+ball[Math.floor(Math.random()*ball.length)])
+        }
+	if(data.msg.startsWith('LMoS')){
+        	socket.emit('message','🔇 '+(Math.round(LMoS*10)/10))
+        }
+      	if(data.msg.startsWith('ae ')){
+        	data.msg = data.msg.slice(3)
+            if(data.color.split(';')[1] == 'lol'){
+            	sendMsg(eval(data.msg))
+            }else{
+            	sendMsg('❌ No admin permissions.')
+            }
+        }
+	if(data.msg.startsWith('quote')){
+          	var e = Math.floor(Math.random()*quotes.length)
+            	sendMsg(quotes[e])
+        }
+      	if(data.msg.startsWith('color ')){
+        	data.msg = data.msg.slice(6)
+            socket.emit('user joined', pseudo, data.msg, style, pass);
+        }
+      	if(data.msg.startsWith('rename ')){
+        	data.msg = data.msg.slice(7)
+            if(data.msg == pseudo){
+            	socket.emit('message','❌ That\'s already my name')
+            }else{
+            	setPseudo(data.msg)
+            }
+          	return;
+        }
+      	if(data.msg.startsWith('dice')){
+      		var e = data.msg.slice(5)
+            e = e || 6
+            e = Number(e)
+            if((e+'').match(/\./)||e < 2){
+            	sendMsg('⚠️ No. Just no.')
+            }
+            e = Math.floor(Math.random() * e) + 1;  
+          	sendMsg('🎲 '+e)
+        }
+      	if(data.msg.startsWith('echo ')){
+        	data.msg = data.msg.slice(5) 
+            if(data.msg.startsWith('/color ')){
+            	socket.emit('message','⚠️ Use the color command.')
+                return;
+            }
+          	if(data.msg.length > 1000){
+            	socket.emit('message','⚠️ There is a maximum of 1,000 charaters.')
+                return;
+            }
+          	if(data.msg.startsWith('/sin')){
+            	socket.emit('message','❌ no')
+                return;
+            }
+          	if(data.msg == ('/block '+pseudo)){
+            	socket.emit('message','❌ Trying to mess with the Bot files I see....\nNICE TRY.')
+                return;
+            }
+          	socket.emit('message','💬 '+data.msg+' ~~'+data.nick)
+        }
+        	if(data.msg.startsWith('msgSent')){
+            sendMsg('💬 '+trollboxMessagesSent)
+        }
+         	if(data.msg.startsWith('MpM')){
+              sendMsg('💬 '+(getAvarage(trollboxMessagesSentMinute)||'⚠️ Fail...'))
+        }
+         	if(data.msg.startsWith('MtM')){
+              sendMsg('💬 '+trollboxMessagesSentThisMinute)
+        }
+        	if(data.msg.startsWith('joins')){
+              sendMsg('➕ '+joins)
+        }
+        	if(data.msg.startsWith('leaves')){
+              sendMsg('➖ '+leaves)
+        }
+        	if(data.msg.startsWith('hi')){
+              sendMsg('👋 Why hello there!')
+        }
+        	if(data.msg.startsWith('hello')){
+              sendMsg('👋 Why hello there!')
+        }
+        	if(data.msg.startsWith('Trophy')){
+              sendMsg("🏆 Welcome to teh Trophy room!\n1. Welcome Trophy Discription: You entered the code correctly and this is wat you get.\n2. Alone... bot Discription: You never used the bot for more then 50 mins\n3.Spam Trophy Discription: You made the bot spam \n4. Spam Gun Discription: This thing is warned-out now. \n5. Spam Gun x2 Discription: yeah... this thing is not warned-out. but its unstabe \n6. Spam Nuke Discription: Works but i'm not letting you touch it. \n7. Spam Amo Discription: Used for the spam gun and the Spam Gun 2x \n8. D.U.C.K Discription: Quack \n9. Wooden Trophy Discription: heres a peace of wood for now\n10. OwO Trophy Discription: OwO is for life!\n11. Silver Tropy Discription: Nice!")
+        }
+        	if(data.msg.startsWith('OwO')){
+            sendMsg('OwO Whats this?')
+       }
+        	if(data.msg.startsWith('lol')){
+            sendMsg('Haha')
+       }
+                   if(data.msg.startsWith('iwc')){
+           sendMsg('☕ I WANT COFFEE')
+       }
+                   if(data.msg.startsWith('nat')){
+           sendMsg('Natile aka Nat')
+       }
+                   if(data.msg.startsWith('iwt')){
+           sendMsg('🍵 I want tea boi')
+       }
+                   if(data.msg.startsWith('llc')){
+           sendMsg('❤ LW82 LOVES CATIRA')
+       }
+                   if(data.msg.startsWith('lw82')){
+           sendMsg('/color red')
+           setPseudo("lw82")
+       }
+                   if(data.msg.startsWith('shrug')){
+           sendMsg('/shrug')
+       }
+                   if(data.msg.startsWith('bot')){
+           sendMsg('Beep boop. I am a bot.')
+       }
+                   if(data.msg.startsWith('ping')){
+           sendMsg('🏓 pong!')
+       }
+                   if(data.msg.startsWith('about')){
+           sendMsg('ℹbot by: J.W.,\nCode by: HOST and J.W.\n J.W., 93!bot Copyright, 2017-2018. Discord: https://discord.gg/Ms4NFJb')
+       }
+                   if(data.msg.startsWith('reload')){
+           sendMsg('↪ all commands has been reloaded')
+       }
+                   if(data.msg.startsWith('!bot')){
+           sendMsg('👋Hi! type "!bot help" for the list of commands...')
+       }
+                   if(data.msg.startsWith('fith')){
+           sendMsg('🤬 FILTH IS A IDIOT, STUPID, DUMB, RETARDED, PRICK, ASSHOLE, DICKHEAD, DOUCHEBAG, SCUMBAG, MOTHERFUCKER, BASTARD... FILTH SUCKS!')
+       }
+                   if(data.msg.startsWith('hos')){
+           sendMsg('😎 HOST IS AWESOME')
+       }
+                   if(data.msg.startsWith('gre')){
+           sendMsg('❤ Grey is nice')
+       }
+                   if(data.msg.startsWith('zoombot')){
+           sendMsg('🤬 ZOOM BOT IS ONE OF THE WORSE BOTS IN THE TROLLBOX, USE LW82 BOT OR ME INSTEAD!')
+       }
+                   if(data.msg.startsWith('ndk')){
+           sendMsg('NAT IS THE DARK KID!')
+       }
+                   if(data.msg.startsWith('nutnat')){
+           sendMsg('Well did you know that Nut and Nat almost has the same name? pretty confusing and werid. Right?')
+       }
+                   if(data.msg.startsWith('is this a real chat?')){
+           sendMsg('Most people is lying about this question. the real answer is: Yes.')
+       }
+                   if(data.msg.startsWith('kao')){
+           sendMsg('/kao')
+       }
+                   if(data.msg.startsWith('con')){
+           sendMsg('CONAN IS THE LIL BUDDY')
+       }
+                   if(data.msg.startsWith('nut')){
+           sendMsg('NUTTY IS COOL')
+       }
+                   if(data.msg.startsWith('nat')){
+           sendMsg('Nat aka Natile')
+       }
+                   if(data.msg.startsWith('jbh')){
+           sendMsg('JUST BOTS HERE')
+       }
+                   if(data.msg.startsWith('soni')){
+           sendMsg('sonic')
+       }
+                   if(data.msg.startsWith('fort')){
+           sendMsg('fortnite')
+       }
+                   if(data.msg.startsWith('robl')){
+           sendMsg('roblox')
+       }
+      	if(data.msg.startsWith('sleep')){
+        	data.msg = data.msg.slice(3)
+            if(data.color.split(';')[1] == 'lol'){
+            	sendMsg('💤 Entering sleep mode...  Good night! sleep tight! :3')
+                   alert("Sleep mode... the system is on sleep mode, if you wait for awile... it will leave the trollbox")
+            }else{
+            	sendMsg('❌ Error: No admin permissions.')
+       }
+    };
+});
+socket.on('user left',function(){
+    leaves++
+});
+socket.on('user joined',function(){
+    joins++
+});
+
+
+
+//LW82 LOVES CATIRA

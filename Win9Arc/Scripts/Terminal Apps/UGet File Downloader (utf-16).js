@@ -1,1 +1,0 @@
-le._apps.uget={hascli:!0,terminal:!0,exec:async function(){var s=this.arg.arguments;$file.save('/a/'+s[1],await ((await fetch('https://cors-anywhere.herokuapp.com/'+s[0])).blob()))}}

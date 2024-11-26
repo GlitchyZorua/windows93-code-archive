@@ -1,1 +1,0 @@
-le._dom.desktop.classList.remove("invisible"),le._dom.taskbar.classList.remove("hide"),le._dom.splash.remove(),le._init.home(),le._init.desktop(),$explorer.refresh(),biosSetup=$noop;

@@ -1,0 +1,1 @@
+function s(){};var int1 = setInterval(function(){$alert({msg:'We block the way!',onready(l,i){function a(I){l.style.transform='scale('+I+')'};var t = 0.75;var erl = 0;setInterval(function(){t+=0.001;erl+=1/16;a(t);if(erl==30){clearInterval(int1)}},10)},center:false,baseClass:'virus'})},750)

@@ -1,1 +1,0 @@
-le._apps.exit={hascli:!0,exec:function(){this.cli&&this.cli.window.close()}}
