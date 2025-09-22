@@ -1,3 +1,5 @@
+**ATTENTION: jakenpopp has removed the `/exe` command in chat. Which means that looking out for scripts in the trollbox is gonna be pretty pointless. So, for that reason, I recommend you all focus more on other things we are looking for, until jaken reinstates this command again.**
+
 # windows93-code-archive
 A place where you can find some good stuff i guess.
 
