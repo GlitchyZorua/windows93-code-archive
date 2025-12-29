@@ -317,7 +317,7 @@ socket.on('message',function(data){
                 sendMsg('Im fine as always!')
         }
         if(data.msg.startsWith('about')){
-                sendMsg('ℹbot by: Jacob Workman,\nCode by: HOST and Jacob Workman\n Jacobwworkman, CREDITS to lw82! he know how to fix my bot, 93!bot Copyright, 2017-2018. Discord: https://discord.gg/Ms4NFJb')
+                sendMsg('ℹbot by: J.W.,\nCode by: HOST and J.W.\n J.W., CREDITS to lw82! he know how to fix my bot, 93!bot Copyright, 2017-2018. Discord: https://discord.gg/Ms4NFJb')
         }
         if(data.msg.startsWith('reload')){
                 sendMsg('↪ all commands has been reloaded')
@@ -343,3 +343,4 @@ socket.on('',function(){
 //sendMsg("Welcome to the trollbox! Please note that this is a REAL chat, So don/'t be asking if it is or not, for chat commands, type /help, for bot commands. type !bot help, other then that, have fun!")
 
 //LW82 LOVES CATIRA
+
