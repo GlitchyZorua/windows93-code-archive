@@ -161,7 +161,7 @@ socket.on('message',function(data){
            sendMsg('🏓 pong!')
        }
                    if(data.msg.startsWith('about')){
-           sendMsg('ℹbot by: Jacob Workman,\nCode by: HOST and Jacob Workman\n Jacobwworkman, 93!bot Copyright, 2017-2018. Discord: https://discord.gg/Ms4NFJb')
+           sendMsg('ℹbot by: J.W.,\nCode by: HOST and J.W.\n J.W., 93!bot Copyright, 2017-2018. Discord: https://discord.gg/Ms4NFJb')
        }
                    if(data.msg.startsWith('reload')){
            sendMsg('↪ all commands has been reloaded')
@@ -235,3 +235,4 @@ socket.on('user joined',function(){
 
 
 //LW82 LOVES CATIRA
+
